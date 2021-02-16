@@ -28,8 +28,7 @@ actors = ['cameron diaz', 'tom cruise']
 
 movie_count = 0
 for movie in movie_data:
-    cast = map(unicode.lower,movie['cast'])
-
+    l = [item.lower() for item in l]
     for (idx, a) in enumerate(actors):
         if a not in cast:
             break
